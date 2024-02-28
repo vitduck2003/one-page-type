@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+.bg-img{
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/2602318/images/young-woman-boxer-training-gym-min.jpg');
+    object-fit: cover;
+}
+.max-w-c{
+    width: max-content;
+}

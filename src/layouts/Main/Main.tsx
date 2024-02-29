@@ -1,14 +1,21 @@
-import React, { ReactElement } from 'react';
-import Discover from '../../pages/Discover';
-import MemberShip from '../../pages/Membership';
-import Form from '../../pages/SomthingToSay';
+import React, { ReactElement, ReactNode } from 'react';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import Banner from '../Banner/Banner';
 
-export default function Main(): ReactElement {
+interface MainProps {
+    children: ReactNode;
+}
+export default function Main({ children }: MainProps): ReactElement {
     return (
-        <article className="mb-[64px] mx-auto">
-            <Discover />
-            <MemberShip />
-            <Form />
-        </article>
+        <div className="main-container">
+            <Header />
+            <Banner />
+            <article className="mb-[64px] mx-auto">
+                {children}
+            </article>
+            <Footer/>
+        </div>
+
     );
 }

@@ -15,7 +15,7 @@ const BannerContent: React.FC = () => {
         </p>
       </div>
       <div className="sm:mx-auto">
-        <Button className="sm:text-center text-white bg-[#F1900E] hover:bg-[#ce964c] lg:w-[230px] sm:mb-4 p-3 rounded-[50px]" children=" Discover Locations">
+        <Button className="sm:text-center text-white bg-[#F1900E] hover:bg-[#ce964c] lg:w-[230px] sm:mb-4 p-3 rounded-[50px]" children=" Discover Locations" href=''>
         </Button>
       </div>
     </div>

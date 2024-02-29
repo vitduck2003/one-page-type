@@ -1,7 +1,15 @@
 import React, { ReactElement } from 'react';
-import CardDiscover from '../../components/CardDiscover/Card';
-
-const Discover: React.FC = (): ReactElement => {
+import CardDiscover from '../CardDiscover/Card';
+interface DiscoverData {
+    imgUrl: string;
+    title: string;
+    desc: string;
+  }
+  
+  interface MembershipProps {
+    data: DiscoverData[];
+  }
+const Discover: React.FC<MembershipProps> = ({data}): ReactElement => {
     return (
         <div>
             <section
@@ -15,7 +23,7 @@ const Discover: React.FC = (): ReactElement => {
                     Discover our live classes
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center text-center w-fit md:w-full lg:w-fit m-auto">
-                <CardDiscover />
+                    <CardDiscover data={data}/>
                 </div>
             </section>
         </div>

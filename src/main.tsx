@@ -1,16 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import TheHeader from "./layouts/Header/Header"
-import Banner from './layouts/Banner/Banner'
-import TheFooter from './layouts/Footer/Footer'
-import Main from './layouts/Main/Main'
-import '@fortawesome/fontawesome-free/css/all.min.css';
-ReactDOM.createRoot(document.getElementById('root')!).render(
+// main.ts
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import Main from './layouts/Main/Main';
+import HomePage from './pages/Home';
+
+ReactDOM.render(
   <React.StrictMode>
-    <TheHeader />
-    <Banner />
-    <Main />
-    <TheFooter />
+    <Main>
+      <HomePage />
+    </Main>
   </React.StrictMode>,
-)
+  document.getElementById('root')
+);

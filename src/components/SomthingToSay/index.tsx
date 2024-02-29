@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import PageForm from '../../components/Form/Form';
+import PageForm from '../Form/Form';
 
 const Form: React.FC = (): ReactElement => {
     return (
